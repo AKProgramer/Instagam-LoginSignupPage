@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'regularS';
+    src: url('../fonts/segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'italicS';
+    src: url('../fonts/segoe-ui-4-cufonfonts/Segoe\ UI\ Italic.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-panel {
+    width: 350px;
+    height: 415px;
+    border: 1px solid #7a7d82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.right h1 {
+    text-align: center;
+    padding: 40px 0 40px;
+    font-family: 'italicS';
+    font-size: 24px; /* Change the font size for input */
+}
+.input-email {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+   
+}
+.input-email input,.input-password input {
+    padding: 9px 0 7px 8px;
+    width: 280px;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+.input-email input::placeholder, .input-password input::placeholder {
+    font-family: 'regularS', sans-serif;
+    font-size: 12px; /* Change the font size for placeholder text */
+    
+}
+.input-password {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+   
+}
+.right Button{
+    width: 290px;
+    height: 33px;
+    background-color: #0095f6;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+
+.line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #7a7d82;
+    margin-top: 25px;
+}
+.line .left{
+    width: 105px;
+    height: 1px;
+    background-color: #b0b3b8;
+}
+.space-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #385185;
+    font-family: 'regularS';
+    gap: 7px;
+}
+.forgot-password{
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'regularS';
+    font-size: 12px;
+    color: #00376B;
+}
+.bottom-panel{
+    
+    border: 1px solid #7a7d82;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 23px 0 23px;
+    
+}
+.bottom-panel p{
+    font-family: 'regularS';
+}
+.bottom-img{
+    display: flex;
+   justify-content: center;
+    gap: 10px;
+    
+    
+}
+ .get-app{
+    text-align: center;
+    margin: 17px 0 17px;
+    font-family: 'regularS';
+}
+.bottom-img img{
+    height: 40px;
+   
+}
+.left{
+    margin-top: 40px;
+    position: relative;
+}
+
+.frame-image{
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    transform: translate(145px);
+   
+        opacity: 0; /* Initially hide the image */
+        transition: opacity 0.5s ease-in-out; /* Apply a smooth transition effect */
+    
+    
+}
+
+
